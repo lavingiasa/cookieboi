@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+h1 {
+  color:white;
+}
+
 .cards {
   margin: 0 auto;
   display: grid;
