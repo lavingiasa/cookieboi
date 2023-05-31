@@ -12,7 +12,9 @@ body {
 
 .container {
   width: 750px;
-  max-width: 75%;
+  max-width: 1200px;
+  display:grid;
+  gap: 1rem;
   text-align: center;
   background-color: #ffffff;
   border-radius: 5px;
@@ -20,21 +22,17 @@ body {
   padding: 20px;
 }
 
-.button {
-  background-color: #4400ff;
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 10px 40px;
-  margin: 15px 0px;
-  font-size: 1.75rem;
-  border: 5px solid #4400ff;
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
 }
 
-.button:hover {
-  border: 5px solid black;
-  cursor: pointer;
+@media (min-width: 600px) {
+  .container { grid-template-columns: repeat(2, 1fr); }
 }
 
-.button:active {
-  border: 5px solid #ffd300;
+@media (min-width: 900px) {
+  .container { grid-template-columns: repeat(3, 1fr); }
 }
