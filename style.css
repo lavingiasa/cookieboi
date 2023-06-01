@@ -18,8 +18,8 @@ p {
   margin: 0;
 }
 
-h2 {
-  color: white;
+a {
+  color: dodgerblue;
 }
 
 .cards {
@@ -56,6 +56,13 @@ h2 {
   display: flex;
   align-items: center;
   height:100%;
+}
+
+.footer {
+  background: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
 }
 
 @media (min-width: 800px) {
