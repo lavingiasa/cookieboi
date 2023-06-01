@@ -37,6 +37,7 @@ h1 {
   height: 350px;
   width: 300px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 @media (min-width: 800px) {
