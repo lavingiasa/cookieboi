@@ -16,7 +16,6 @@ h1 {
 
 p {
   margin: 0;
-  height: 100%;
 }
 
 .cards {
@@ -51,6 +50,7 @@ p {
 .text {
   display: flex;
   align-items: center;
+  height:100%;
 }
 
 @media (min-width: 800px) {
