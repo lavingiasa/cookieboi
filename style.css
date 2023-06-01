@@ -1,5 +1,5 @@
 body {
-  padding: 0;
+  padding-bottom: 20px;
   margin: 0;
   font-family: "Syne Mono", monospace;
   display: flex;
@@ -16,6 +16,10 @@ h1 {
 
 p {
   margin: 0;
+}
+
+div {
+  color: white;
 }
 
 .cards {
