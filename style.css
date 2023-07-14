@@ -7,11 +7,12 @@ body {
   background:  rgb(175, 104, 57);
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 h1 {
   color:white;
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(18px + 1.5vw);
 }
 
 p {
