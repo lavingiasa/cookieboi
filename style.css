@@ -23,6 +23,22 @@ a {
   color: dodgerblue;
 }
 
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.gluten-free-text {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: white;
+  background-color: #9e6d3d;
+  border-radius: 0.25em;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .cards {
   margin: 0 auto;
   display: grid;
