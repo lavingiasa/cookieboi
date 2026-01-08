@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
         isGlutenFree: false
       },
       {
+        imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/deb.jpg",
+        altText: "Photo of Deb enjoying a cookie from Samir",
+        quote: "\"banger.\" - Deb",
+        isGlutenFree: false
+      },
+      {
         imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/justin.jpg",
         altText: "Photo of Justin enjoying a gluten free cookie from Samir",
         quote: "\"10/10. The majority of the cookies remained eaten and popular\" - Justin",
@@ -19,6 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         isGlutenFree: false
       },
       {
+        imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/laura.jpg",
+        altText: "Photo of Laura enjoying a cookie from Samir",
+        quote: "\"perfect.\" - Laura",
+        isGlutenFree: false
+      },
+      {
         imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/ryder.jpg",
         altText: "Photo of Ryder enjoying a cookie from Samir",
         quote: "\"These cookies were the best birthday gift I got this year!\" - Ryder",
@@ -28,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
         imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/surbhi-rect.jpg",
         altText: "Photo of Surbhi enjoying a cookie from Samir",
         quote: "\"These cookies help you get those race PRs\" - Surbhi",
+        isGlutenFree: false
+      },
+      {
+        imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/sara.jpg",
+        altText: "Photo of Sara enjoying a cookie from Samir",
+        quote: "\"Yum!\" - Sara",
         isGlutenFree: false
       },
       {
@@ -89,12 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
         altText: "Photo of Jeremy enjoying a gluten free cookie from Samir",
         quote: "Amazing - Jeremy",
         isGlutenFree: true
-      },
-      {
-        imageSrc: "https://storage.googleapis.com/cookieboi.com/photos/emilia-syringe-2.jpg",
-        altText: "Photo of Émilia imagining a delicious cookie from Samir",
-        quote: "\"I haven't had a cookie yet but they seem really good\" - Émilia",
-        isGlutenFree: false
       }
     ];
   
