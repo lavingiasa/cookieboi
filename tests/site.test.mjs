@@ -25,6 +25,7 @@ test("serves the plain bikecream event page", async () => {
   }
   assert.match(html, /Julia Jean's/);
   assert.match(html, /Who\?/);
+  assert.match(html, /\(I also had a hojicha latte and my mind is going crazyyyyy\)/);
   assert.match(html, /How\?/);
   assert.match(html, /www\.komoot\.com\/invite-tour\/3176095224/);
   assert.match(html, /calendar\.app\.google\/hKyUXafwrN9uBqbw6/);
