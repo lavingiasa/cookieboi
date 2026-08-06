@@ -19,7 +19,7 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /We will hit up seven \(7\) ice cream shops across Manhattan, Queens, and Brooklyn:/);
   assert.doesNotMatch(html, /4791 Broadway in Inwood/);
   assert.doesNotMatch(html, /From there, we will ride to six more stops/);
-  assert.match(html, /Softside<\/a> at 1231 Broadway, New York, NY 10001 <span>— 10\.9 mi<\/span>/);
+  assert.match(html, /Softside<\/a> at 1231 Broadway, Manhattan <span>— 10\.9 mi<\/span>/);
   for (const distance of ["0", "10.9", "16.2", "20", "24.4", "29.1", "33.4"]) {
     assert.ok(html.includes(`— ${distance} mi`));
   }
