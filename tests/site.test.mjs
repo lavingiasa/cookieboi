@@ -20,6 +20,8 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /www\.komoot\.com\/invite-tour\/3176095224/);
   assert.match(html, /Special thanks to Liz Denys/);
   assert.match(html, /mooncon\.lizdenys\.com/);
+  assert.match(html, /og:image:width" content="1414"/);
+  assert.match(html, /og:image:height" content="284"/);
 });
 
 test("serves the small script and social card", async () => {
