@@ -25,10 +25,11 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /og:image:height" content="284"/);
 });
 
-test("serves the small script and social card", async () => {
-  const [scriptResponse, imageResponse] = await Promise.all([
+test("serves the small script, social card, and favicon", async () => {
+  const [scriptResponse, imageResponse, faviconResponse] = await Promise.all([
     worker.fetch(new Request("https://bikecream.cookieboi.com/script.js")),
     worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-wordmark-social.png")),
+    worker.fetch(new Request("https://bikecream.cookieboi.com/images/favicon.ico")),
   ]);
 
   assert.equal(scriptResponse.status, 200);
@@ -36,6 +37,9 @@ test("serves the small script and social card", async () => {
   assert.equal(imageResponse.status, 200);
   assert.equal(imageResponse.headers.get("content-type"), "image/png");
   assert.ok((await imageResponse.arrayBuffer()).byteLength > 10_000);
+  assert.equal(faviconResponse.status, 200);
+  assert.equal(faviconResponse.headers.get("content-type"), "image/x-icon");
+  assert.ok((await faviconResponse.arrayBuffer()).byteLength > 1_000);
 });
 
 test("returns a real 404", async () => {
