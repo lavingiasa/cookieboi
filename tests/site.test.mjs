@@ -33,14 +33,14 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /Special thanks to Liz Denys/);
   assert.match(html, /mooncon\.lizdenys\.com/);
   assert.match(html, /og:image:width" content="1414"/);
-  assert.match(html, /og:image:height" content="284"/);
-  assert.match(html, /bikecream-wordmark-social-padded\.png\?v=2/);
+  assert.match(html, /og:image:height" content="680"/);
+  assert.match(html, /bikecream-wordmark-social-padded-680\.png\?v=3/);
 });
 
 test("serves the small script, social card, and favicon", async () => {
   const [scriptResponse, imageResponse, faviconResponse] = await Promise.all([
     worker.fetch(new Request("https://bikecream.cookieboi.com/script.js")),
-    worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-wordmark-social-padded.png")),
+    worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-wordmark-social-padded-680.png")),
     worker.fetch(new Request("https://bikecream.cookieboi.com/images/favicon.ico")),
   ]);
 

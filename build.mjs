@@ -8,7 +8,7 @@ const [html, css, javascript, socialImage, favicon] = await Promise.all([
   readFile(new URL("index.html", root), "utf8"),
   readFile(new URL("style.css", root), "utf8"),
   readFile(new URL("script.js", root), "utf8"),
-  readFile(new URL("images/bikecream-wordmark-social-padded.png", root)),
+  readFile(new URL("images/bikecream-wordmark-social-padded-680.png", root)),
   readFile(new URL("images/favicon.ico", root)),
 ]);
 
@@ -21,7 +21,7 @@ const textAssets = new Map([
 ]);
 
 const binaryAssets = new Map([
-  ["/images/bikecream-wordmark-social-padded.png", { base64: ${JSON.stringify(socialImage.toString("base64"))}, type: "image/png" }],
+  ["/images/bikecream-wordmark-social-padded-680.png", { base64: ${JSON.stringify(socialImage.toString("base64"))}, type: "image/png" }],
   ["/images/favicon.ico", { base64: ${JSON.stringify(favicon.toString("base64"))}, type: "image/x-icon" }],
 ]);
 
