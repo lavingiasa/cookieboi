@@ -27,7 +27,7 @@ test("serves the plain bikecream event page", async () => {
 test("serves the small script and social card", async () => {
   const [scriptResponse, imageResponse] = await Promise.all([
     worker.fetch(new Request("https://bikecream.cookieboi.com/script.js")),
-    worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-social.png")),
+    worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-wordmark-social.png")),
   ]);
 
   assert.equal(scriptResponse.status, 200);
