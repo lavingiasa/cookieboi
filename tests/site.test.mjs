@@ -17,6 +17,9 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /Julia Jean's/);
   assert.match(html, /Who\?/);
   assert.match(html, /How\?/);
+  assert.match(html, /www\.komoot\.com\/invite-tour\/3176095224/);
+  assert.match(html, /Special thanks to Liz Denys/);
+  assert.match(html, /mooncon\.lizdenys\.com/);
 });
 
 test("serves the small script and social card", async () => {
