@@ -3,234 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ff6b57">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#24130e">
   <link href="style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <script src="script.js" defer></script>
 
-  <title>bikecream — 34 miles, 7 scoops, no drops</title>
-  <meta name="description" content="A long, social ice cream bike crawl across Manhattan, Queens, and Brooklyn.">
+  <title>bikecream — a long ice cream bike ride</title>
+  <meta name="description" content="A long, social ice cream bike ride through Manhattan, Queens, and Brooklyn.">
   <link rel="canonical" href="https://bikecream.cookieboi.com/">
 
   <meta property="og:url" content="https://bikecream.cookieboi.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="bikecream">
-  <meta property="og:description" content="34 miles. 7 scoops. No drops. A social ice cream bike crawl across NYC.">
+  <meta property="og:description" content="34 miles, 7 ice cream stops, and a social ride through New York City.">
   <meta property="og:image" content="https://bikecream.cookieboi.com/images/bikecream-social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Bikecream: 34 miles, 7 scoops, no drops">
+  <meta property="og:image:alt" content="Bikecream — a long, social ice cream bike ride around New York City">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="bikecream">
-  <meta name="twitter:description" content="34 miles. 7 scoops. No drops. A social ice cream bike crawl across NYC.">
+  <meta name="twitter:description" content="34 miles, 7 ice cream stops, and a social ride through New York City.">
   <meta name="twitter:image" content="https://bikecream.cookieboi.com/images/bikecream-social.png">
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to the ride</a>
+  <a class="skip-link" href="#main">Skip to the ride details</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Bikecream home">bike<span>cream</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#route">Route</a>
-      <a href="#plan">Plan</a>
-      <a class="nav-cta" href="#join">Ride with us</a>
-    </nav>
+  <header>
+    <h1><a href="/"><span>bike</span><span>cream</span></a></h1>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">A long, social NYC bike crawl</p>
-        <h1 id="hero-title"><span>34 miles.</span><span>7 scoops.</span><span>No drops.</span></h1>
-        <p class="hero-deck">Three boroughs, two bridge crossings, and a completely reasonable amount of ice cream.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#route">See all 7 stops</a>
-          <a class="text-link" href="https://www.google.com/maps/@40.769185,-74.0053456,12z/data=!4m11!1m7!3m6!1s0x89c259ad26af9f93:0x1c81e9e12e9c5cbe!2sUnnecessary!8m2!3d40.7195132!4d-73.9905555!16s%2Fg%2F11z90t3mps!11m2!2ssJTu6qSSYNZq9xW7cuhXCg!3e3?entry=ttu" target="_blank" rel="noreferrer">Open the ice cream list ↗</a>
-        </div>
-      </div>
+    <article>
+      <h2>Hello.</h2>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="sun-scoop"></div>
-        <div class="bike">
-          <div class="wheel wheel-left"></div>
-          <div class="wheel wheel-right"></div>
-          <div class="bike-frame"></div>
-          <div class="bike-bar"></div>
-          <div class="bike-seat"></div>
-          <div class="bike-handle"></div>
-          <div class="cone">
-            <span class="scoop scoop-one"></span>
-            <span class="scoop scoop-two"></span>
-          </div>
-        </div>
-        <p class="art-note">Inwood → Lower East Side<br>the long way</p>
-      </div>
+      <section aria-labelledby="who">
+        <h3 id="who">Who?</h3>
+        <p>You, your bike, and anyone who wants a long, social ride with frequent ice cream stops.</p>
+      </section>
 
-      <div class="stat-strip" aria-label="Ride overview">
-        <div><strong>34</strong><span>miles</span></div>
-        <div><strong>7</strong><span>shops</span></div>
-        <div><strong>3</strong><span>boroughs</span></div>
-        <div><strong>1</strong><span>no-drop crew</span></div>
-      </div>
-    </section>
+      <section aria-labelledby="what">
+        <h3 id="what">What?</h3>
+        <p>A 34-mile bike ride to seven ice cream shops in Manhattan, Queens, and Brooklyn. The mileage is intentional. This is a social ride, not a race.</p>
+      </section>
 
-    <section class="intro section-shell" aria-labelledby="hello-title">
-      <p class="section-number">01 / THE DEAL</p>
-      <div class="intro-grid">
-        <h2 id="hello-title">Hello,<br>sweet rider.</h2>
-        <div class="qa-list">
-          <article>
-            <h3>Who?</h3>
-            <p>You, your bike, and anyone who understands that a sundae is technically ride fuel.</p>
-          </article>
-          <article>
-            <h3>What?</h3>
-            <p>A deliberately long, very social tour of seven excellent ice cream shops across Manhattan, Queens, and Brooklyn.</p>
-          </article>
-          <article>
-            <h3>When?</h3>
-            <p><strong>Saturday · date TBA</strong><br>Meet at 11:00 am. Roll at 11:30. Finish around 6:00 pm.</p>
-          </article>
-          <article>
-            <h3>Why?</h3>
-            <p>Because New York is best seen by bike, ice cream tastes better after a bridge climb, and thirty-four miles leaves plenty of time to make friends.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section aria-labelledby="when">
+        <h3 id="when">When?</h3>
+        <p>Saturday, date to be announced. Meet at 11:00 am, roll at 11:30 am, and expect to finish around 6:00 pm.</p>
+      </section>
 
-    <section class="route" id="route" aria-labelledby="route-title">
-      <div class="section-shell route-heading">
-        <p class="section-number">02 / THE SCOOP LOOP</p>
-        <h2 id="route-title">Seven stops.<br>One sweet line.</h2>
-        <p>We start uptown, take the Hudson south, swing through Queens and Brooklyn, and finish back in Manhattan. Tap a stop for the details.</p>
-      </div>
+      <section aria-labelledby="where">
+        <h3 id="where">Where?</h3>
+        <p>Meet at <a href="https://www.google.com/maps/search/?api=1&amp;query=Lost+Borough+Ice+Cream+4791+Broadway+New+York" target="_blank" rel="noreferrer">Lost Borough</a>, 4791 Broadway in Inwood.</p>
+        <p>From there, we will ride to six more stops:</p>
 
-      <ol class="route-list section-shell">
-        <li class="route-stop" style="--stop-color: #ffecb5">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-1">
-            <span class="mile">0.0</span>
-            <span class="stop-main"><small>START · INWOOD</small><strong>Lost Borough</strong></span>
-            <span class="stop-treat">Culturally inspired scoops</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-1" hidden>
-            <p>Meet at 11:00, taste the Fort Tryon flavor, and roll at 11:30.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Lost+Borough+Ice+Cream+4791+Broadway+New+York" target="_blank" rel="noreferrer">4791 Broadway, Manhattan ↗</a>
-          </div>
-        </li>
-        <li class="route-stop" style="--stop-color: #ffc0cb">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-2">
-            <span class="mile">11.4</span>
-            <span class="stop-main"><small>STOP 02 · NOLITA</small><strong>Softside</strong></span>
-            <span class="stop-treat">Soft serve, hard-earned</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-2" hidden>
-            <p>The long opening leg: Hudson River miles first, sugar second.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Softside+51+Spring+Street+New+York" target="_blank" rel="noreferrer">51 Spring Street, Manhattan ↗</a>
-          </div>
-        </li>
-        <li class="route-stop" style="--stop-color: #83c9ff">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-3">
-            <span class="mile">16.7</span>
-            <span class="stop-main"><small>STOP 03 · SUNNYSIDE</small><strong>The Screen Door</strong></span>
-            <span class="stop-treat">Old-school sundae energy</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-3" hidden>
-            <p>A nostalgic parlor stop after our first East River crossing.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=The+Screen+Door+48-19+Skillman+Avenue+Sunnyside" target="_blank" rel="noreferrer">48-19 Skillman Avenue, Queens ↗</a>
-          </div>
-        </li>
-        <li class="route-stop" style="--stop-color: #b8df79">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-4">
-            <span class="mile">20.4</span>
-            <span class="stop-main"><small>STOP 04 · WILLIAMSBURG</small><strong>Common Meadows</strong></span>
-            <span class="stop-treat">Seasonal, thoughtful gelato</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-4" hidden>
-            <p>Rotating flavors made with obsessive care. Sample before committing.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Common+Meadows+Creamery+227+Grand+Street+Brooklyn" target="_blank" rel="noreferrer">227 Grand Street, Brooklyn ↗</a>
-          </div>
-        </li>
-        <li class="route-stop" style="--stop-color: #e7c3ff">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-5">
-            <span class="mile">24.9</span>
-            <span class="stop-main"><small>STOP 05 · BED-STUY</small><strong>Dolly's Coffee Shop</strong></span>
-            <span class="stop-treat">Rotating soft serve + real food</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-5" hidden>
-            <p>Our savory intermission. Soft serve runs in the afternoon; the focaccia is ride fuel.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Dolly%27s+Coffee+Shop+53+Rockaway+Avenue+Brooklyn" target="_blank" rel="noreferrer">53 Rockaway Avenue, Brooklyn ↗</a>
-          </div>
-        </li>
-        <li class="route-stop" style="--stop-color: #ffd35c">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-6">
-            <span class="mile">29.6</span>
-            <span class="stop-main"><small>STOP 06 · PARK SLOPE</small><strong>L'Albero dei Gelati</strong></span>
-            <span class="stop-treat">Italian craft, Brooklyn corner</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-6" hidden>
-            <p>Small-batch gelato before the final push back across the river.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=L%27Albero+dei+Gelati+341+5th+Avenue+Brooklyn" target="_blank" rel="noreferrer">341 Fifth Avenue, Brooklyn ↗</a>
-          </div>
-        </li>
-        <li class="route-stop" style="--stop-color: #ff806f">
-          <button class="stop-button" type="button" aria-expanded="false" aria-controls="stop-7">
-            <span class="mile">33.9</span>
-            <span class="stop-main"><small>FINISH · LOWER EAST SIDE</small><strong>Julia Jean's</strong></span>
-            <span class="stop-treat">The victory scoop</span>
-            <span class="plus" aria-hidden="true">+</span>
-          </button>
-          <div class="stop-details" id="stop-7" hidden>
-            <p>Final cones, tired legs, and a thoroughly earned Lower East Side hang.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Julia+Jean%27s+Ice+Cream+202+Clinton+Street+New+York" target="_blank" rel="noreferrer">202 Clinton Street, Manhattan ↗</a>
-          </div>
-        </li>
-      </ol>
-    </section>
+        <ol class="stops">
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lost+Borough+Ice+Cream+4791+Broadway+New+York" target="_blank" rel="noreferrer">Lost Borough</a> at 4791 Broadway, Manhattan <span>— mile 0</span></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Softside+51+Spring+Street+New+York" target="_blank" rel="noreferrer">Softside</a> at 51 Spring Street, Manhattan <span>— mile 11.4</span></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Screen+Door+48-19+Skillman+Avenue+Sunnyside" target="_blank" rel="noreferrer">The Screen Door</a> at 48-19 Skillman Avenue, Queens <span>— mile 16.7</span></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Common+Meadows+Creamery+227+Grand+Street+Brooklyn" target="_blank" rel="noreferrer">Common Meadows</a> at 227 Grand Street, Brooklyn <span>— mile 20.4</span></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Dolly%27s+Coffee+Shop+53+Rockaway+Avenue+Brooklyn" target="_blank" rel="noreferrer">Dolly's Coffee Shop</a> at 53 Rockaway Avenue, Brooklyn <span>— mile 24.9</span></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Albero+dei+Gelati+341+5th+Avenue+Brooklyn" target="_blank" rel="noreferrer">L'Albero dei Gelati</a> at 341 Fifth Avenue, Brooklyn <span>— mile 29.6</span></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Julia+Jean%27s+Ice+Cream+202+Clinton+Street+New+York" target="_blank" rel="noreferrer">Julia Jean's</a> at 202 Clinton Street, Manhattan <span>— mile 33.9</span></li>
+        </ol>
 
-    <section class="plan section-shell" id="plan" aria-labelledby="plan-title">
-      <p class="section-number">03 / RIDE THE RIDE</p>
-      <div class="plan-grid">
-        <div>
-          <h2 id="plan-title">Long ride.<br>Soft rules.</h2>
-          <p class="plan-intro">This is a social ride, not a race. We move together and make room for every kind of comfortable city bike.</p>
-        </div>
-        <div class="rules">
-          <article><span>01</span><div><h3>No-drop means no-drop.</h3><p>We regroup after major turns and bridge crossings. Nobody gets abandoned with melting ice cream.</p></div></article>
-          <article><span>02</span><div><h3>Electric or acoustic.</h3><p>Ride the bicycle you trust for 34 city miles. No mopeds, obviously.</p></div></article>
-          <article><span>03</span><div><h3>Share the scoop.</h3><p>Seven full desserts is a dare, not a requirement. Split, sample, hydrate, repeat.</p></div></article>
-          <article><span>04</span><div><h3>Bring the basics.</h3><p>Helmet, lock, lights, water, payment, a spare tube, and a little patience for the group.</p></div></article>
-        </div>
-      </div>
-    </section>
+        <p><a href="https://www.google.com/maps/@40.769185,-74.0053456,12z/data=!4m11!1m7!3m6!1s0x89c259ad26af9f93:0x1c81e9e12e9c5cbe!2sUnnecessary!8m2!3d40.7195132!4d-73.9905555!16s%2Fg%2F11z90t3mps!11m2!2ssJTu6qSSYNZq9xW7cuhXCg!3e3?entry=ttu" target="_blank" rel="noreferrer">See the ice cream list on Google Maps.</a></p>
+      </section>
 
-    <section class="join" id="join" aria-labelledby="join-title">
-      <div class="join-scoop" aria-hidden="true"></div>
-      <p class="section-number">04 / COME HUNGRY</p>
-      <h2 id="join-title">Want in?</h2>
-      <p>The date and final route file are coming soon. For now, save the list, tune the bike, and clear a Saturday.</p>
-      <div class="join-actions">
-        <a class="button button-cream" href="https://www.google.com/maps/@40.769185,-74.0053456,12z/data=!4m11!1m7!3m6!1s0x89c259ad26af9f93:0x1c81e9e12e9c5cbe!2sUnnecessary!8m2!3d40.7195132!4d-73.9905555!16s%2Fg%2F11z90t3mps!11m2!2ssJTu6qSSYNZq9xW7cuhXCg!3e3?entry=ttu" target="_blank" rel="noreferrer">Save the ice cream list ↗</a>
-        <a class="text-link text-link-light" href="#top">Back to the top ↑</a>
-      </div>
-    </section>
+      <section aria-labelledby="why">
+        <h3 id="why">Why?</h3>
+        <p>Because New York is fun to cross by bike, ice cream is good ride fuel, and the long way gives us time to talk.</p>
+      </section>
+
+      <section aria-labelledby="how">
+        <h3 id="how">How?</h3>
+        <p>By bike. Electric or acoustic is fine. This will be a no-drop ride, with regrouping after major turns and bridge crossings.</p>
+        <p>Bring a helmet, lock, lights, water, payment, and a spare tube. Share or sample at the stops if seven full servings sounds like too much.</p>
+      </section>
+    </article>
   </main>
 
   <footer>
-    <a class="footer-mark" href="#top">bikecream</a>
-    <p>Made with strong legs and questionable restraint in NYC.</p>
-    <p>© <span id="year"></span> bikecream</p>
+    <p>© <span id="year">2026</span> bikecream</p>
   </footer>
 </body>
 </html>
