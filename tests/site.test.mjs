@@ -14,6 +14,8 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /<title>bikecream/);
   assert.match(html, /34-mile bike ride/);
   assert.match(html, /Lost Borough/);
+  assert.match(html, /maps\.app\.goo\.gl\/zGWW5N3Q4DHpa4EcA/);
+  assert.match(html, /Softside<\/a> at 1231 Broadway, New York, NY 10001 <span>— mile 11\.4<\/span>/);
   assert.match(html, /Julia Jean's/);
   assert.match(html, /Who\?/);
   assert.match(html, /How\?/);
