@@ -34,12 +34,13 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /mooncon\.lizdenys\.com/);
   assert.match(html, /og:image:width" content="1414"/);
   assert.match(html, /og:image:height" content="284"/);
+  assert.match(html, /bikecream-wordmark-social-padded\.png\?v=2/);
 });
 
 test("serves the small script, social card, and favicon", async () => {
   const [scriptResponse, imageResponse, faviconResponse] = await Promise.all([
     worker.fetch(new Request("https://bikecream.cookieboi.com/script.js")),
-    worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-wordmark-social.png")),
+    worker.fetch(new Request("https://bikecream.cookieboi.com/images/bikecream-wordmark-social-padded.png")),
     worker.fetch(new Request("https://bikecream.cookieboi.com/images/favicon.ico")),
   ]);
 
