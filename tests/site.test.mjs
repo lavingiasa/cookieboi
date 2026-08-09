@@ -24,6 +24,21 @@ test("serves the plain bikecream event page", async () => {
     assert.ok(html.includes(`— ${distance} mi`));
   }
   assert.match(html, /Julia Jean's/);
+  assert.match(html, /This ride is Citi Bike friendly\./);
+  assert.equal((html.match(/Nearest Citi Bike Station:/g) ?? []).length, 7);
+  assert.equal((html.match(/<span class="citibike-station">Nearest Citi Bike Station: <a href="https:\/\/www\.google\.com\/maps\/search\/\?api=1&amp;query=[^"]+"/g) ?? []).length, 7);
+  for (const station of [
+    "Seaman Ave &amp; Beak St",
+    "Broadway &amp; W 29 St",
+    "48 St &amp; Skillman Ave",
+    "Driggs Ave &amp; S 2 St",
+    "MacDougal St &amp; Rockaway Ave",
+    "5 Ave &amp; 3 St",
+    "Madison St &amp; Clinton St",
+  ]) {
+    assert.ok(html.includes(station));
+  }
+  assert.doesNotMatch(html, /Citibike/);
   assert.match(html, /Who\?/);
   assert.match(html, /\(I also had a hojicha latte and my mind is going crazyyyyy\)/);
   assert.match(html, /How\?/);

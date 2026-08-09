@@ -126,6 +126,12 @@ p {
   white-space: nowrap;
 }
 
+.stops .citibike-station {
+  display: block;
+  margin-top: 2px;
+  white-space: normal;
+}
+
 section:nth-of-type(1) h3 {
   color: var(--pink);
 }
