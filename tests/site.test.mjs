@@ -26,7 +26,18 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /Julia Jean's/);
   assert.match(html, /This ride is Citi Bike friendly\./);
   assert.equal((html.match(/Nearest Citi Bike Station:/g) ?? []).length, 7);
-  assert.equal((html.match(/<span class="citibike-station">Nearest Citi Bike Station: <a href="https:\/\/www\.google\.com\/maps\/search\/\?api=1&amp;query=[^"]+"/g) ?? []).length, 7);
+  assert.equal((html.match(/<span class="citibike-station">Nearest Citi Bike Station: <a href="https:\/\/maps\.app\.goo\.gl\/[^"]+"/g) ?? []).length, 7);
+  for (const link of [
+    "https://maps.app.goo.gl/hrsyfemJmm6b31f49",
+    "https://maps.app.goo.gl/5nMGwYhp67PQVfkN8",
+    "https://maps.app.goo.gl/W8EawU5Ym7PuGPgm7",
+    "https://maps.app.goo.gl/fPxBvmRatBDAETF3A",
+    "https://maps.app.goo.gl/wEmr6GWE3UvtPJsQ8",
+    "https://maps.app.goo.gl/yfcQZ26mr5MsqEJH7",
+    "https://maps.app.goo.gl/3upW6X7FcyZ5XAB36",
+  ]) {
+    assert.ok(html.includes(link));
+  }
   for (const station of [
     "Seaman Ave &amp; Beak St",
     "Broadway &amp; W 29 St",
