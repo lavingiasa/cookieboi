@@ -85,6 +85,27 @@ header h1 span:last-child {
   color: var(--pink);
 }
 
+.weather-notice {
+  margin-bottom: 28px;
+  padding: 20px 24px;
+  border: 1px solid var(--orange);
+  border-radius: 12px;
+  background: #3a2018;
+  font-size: 1rem;
+}
+
+.weather-notice p {
+  margin: 0;
+}
+
+.weather-notice p + p {
+  margin-top: 12px;
+}
+
+.weather-notice strong {
+  color: var(--orange);
+}
+
 article > h2 {
   margin: 0 0 20px;
   color: var(--blue);
