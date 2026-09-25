@@ -54,9 +54,9 @@ test("serves the plain bikecream event page", async () => {
   assert.match(html, /\(I also had a hojicha latte and my mind is going crazyyyyy\)/);
   assert.match(html, /How\?/);
   assert.match(html, /www\.komoot\.com\/invite-tour\/3176095224/);
-  assert.match(html, /calendar\.app\.google\/hKyUXafwrN9uBqbw6/);
-  assert.match(html, /Eating ice cream in the rain doesn't sound like fun, so if it rains the ride will be rescheduled\. If you see rain in the forecast make sure to check this site for updates or contact Samir!/);
-  assert.match(html, /Google Calendar user\? <a[^>]+>Join here<\/a> \(optional \/ for updates\)\./);
+  assert.match(html, /CANCELED: Sunday, September 27 ride/);
+  assert.match(html, /There will be no 11:00 am meetup at Lost Borough\./);
+  assert.doesNotMatch(html, /calendar\.app\.google\/hKyUXafwrN9uBqbw6|Join here|we're rescheduling|if it rains the ride will be rescheduled/);
   assert.match(html, /images\/favicon\.ico\?v=2/);
   assert.match(html, /Special thanks to Liz Denys/);
   assert.match(html, /mooncon\.lizdenys\.com/);

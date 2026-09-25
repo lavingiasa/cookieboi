@@ -213,3 +213,9 @@ footer p {
     scroll-behavior: smooth;
   }
 }
+
+.weather-notice h2 {
+  margin: 0 0 12px;
+  color: var(--orange);
+  font: 700 1.125rem/1.4 Arial, Helvetica, sans-serif;
+}
